@@ -1,0 +1,1 @@
+ALTER TABLE `school_register` ADD COLUMN `school_address` LONGTEXT NULL AFTER `created_date`;

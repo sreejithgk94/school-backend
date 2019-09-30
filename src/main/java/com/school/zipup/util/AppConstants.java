@@ -1,0 +1,96 @@
+package com.school.zipup.util;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * App constants.
+ */
+public interface AppConstants {
+    long TOKEN_VALIDITY_SECONDS = 6 * 60 * 60;
+    long REMEMBER_ME_TOKEN_VALIDITY_SECONDS = 7 * 24 * 60 * 60;
+    String SECRET_KEY = "K5KqA5G5sku";
+    String TOKEN_PREFIX = "Bearer ";
+    String HEADER_STRING = "Authorization";
+    String ADMIN = "ADMIN";
+    String MONTHLYPLAN = "Monthly";
+    String SUPERADMIN = "SUPER ADMIN";
+    List<String> USER_ROLE = Arrays.asList("ADMIN", "SUPER ADMIN", "USER");
+    String USER = "USER";
+    List<String> TEAM_STATUS = Arrays.asList("ASSIGN_TO_CAMPAIGN", "REMOVE_FROM_CAMPAIGN", "DISABLE", "DELETE_FROM_CAMPAIGNS", "DISCONNECT");
+    List<String> TEAM_STATUS_CHECK = Arrays.asList("REMOVE_FROM_CAMPAIGN", "DISABLE", "DELETE_FROM_CAMPAIGNS");
+    String SMS_SENT = "SMS SENT";
+    List<String> APP_SETUP_STATUS = Arrays.asList("SMS SENT", "APP CONNECTED", "APP DISCONNECTED", "APP DELETED");
+    List<String> QUESTION_TYPES = Arrays.asList("MULTIPLE_CHOICE", "DROPDOWN", "TEXT_ENTRY", "FILE_UPLOAD");
+    String MULTIPLE_CHOICE = "MULTIPLE_CHOICE";
+    String DROPDOWN = "DROPDOWN";
+    String TEXTENTRY = "TEXT_ENTRY";
+    String FILEUPLOAD = "FILE_UPLOAD";
+    String APP_CONNECTED = "APP CONNECTED";
+    String MESSAGE_CONTENT = "Your campaign registration code is : ";
+    String DONT_SHARE_MESSAGE = ". Dont share this with anyone!";
+    List<String> STATUS = Arrays.asList("STARTED", "ENDED", "NOT STARTED");
+    String STORE_PROTOCOL = "mail.store.protocol";
+    String IMAP = "imap";
+    String IMAP_HOST = "mail.imap.host";
+    String IMAP_HOST_VALUE = "imap.googlemail.com";
+    String IMAP_PORT = "mail.imap.port";
+    String IMAP_PORT_VALUE = "993";
+    String IMAP_STARTTLS_ENABLE = "mail.imap.starttls.enable";
+    String TRUE = "true";
+    String IMAPS = "imaps";
+    String IMAP_GMAIL_HOST = "imap.googlemail.com";
+    String CAMPAIGN_NAME = "campaign_name";
+    String CAMPAIGNNAME = "campaignName";
+    String USER_ACTIVE = "ACTIVE";
+    String USER_OFFLINE = "OFFLINE";
+    String CREATED_ON = "created_on";
+    String CREATEDON = "createdOn";
+    List<String> KANBAN_FILTER_SORT_FIELDS = Arrays
+            .asList("enquiry_date", "priority", "mode");
+    String PRIORITY = "priority";
+    String MODE = "mode";
+    String ENQUIRY_DATE = "enquiry_date";
+    String STARTED = "STARTED";
+    String ENDED = "ENDED";
+    String ACTIVE = "ACTIVE";
+    String EXPIRED = "EXPIRED";
+    String NOT_ACTIVE = "NOT ACTIVE";
+    String MOVED_STATUS = "MOVED";
+    String CALL = "CALL";
+    List<String> SEARCH_ENQUIRY = Arrays.asList("TOTAL", "SMS", "EMAIL", "WEB", "SOCIAL");
+    String CREATED = "CREATED";
+    String INFO_ADDED = "INFOADDED";
+    String CLOSED = "CLOSED";
+    int ONE = 1;
+    String CUSTOMER_MAP_KEY = "customer";
+    String AMOUNT_MAP_KEY = "amount";
+    String CURRENCY_MAP_KEY = "currency";
+    String DESCRIPTION_MAP_KEY = "description";
+    String CURRENCY = "USD";
+    String INVOICE_ITEM_LINE = "Plan - ";
+    String BILLING_MAP_KEY = "billing";
+    String SEND_INVOICE_MAP_VALUE = "send_invoice";
+    String DAYS_UNTIL_DUE_MAP_KEY = "days_until_due";
+    String DAYS_UNTIL_DUE_MAP_VALUE = "30";
+    String AUTO_ADVANCE_MAP_KEY = "auto_advance";
+    String CALL_SLATE_ADMIN = "admin@callslate.com";
+    String PLAN_ACTIVE_STATUS = "ACTIVE";
+    String INCOMING_ENQUIRY = "INCOMING ENQUIRY";
+    String FREE_PLAN = "FREE";
+    String BASIC_PLAN = "BASIC";
+    String MAP_KEY_DATA = "data";
+    String MAP_KEY_CARD = "card";
+    String MAP_KEY_STATUS = "status";
+    String MAP_KEY_AMOUNT = "amount";
+    String MAP_KEY_CUSTOMER_NAME = "custname";
+    String MAP_KEY_CUSTOMER_EMAIL = "custemail";
+    String SUCCESS_VALUE = "successful";
+    String CARD_LAST_4_DIGITS = "last4digits";
+    String CARD_TYPE = "type";
+    String INFO_EMAIL_ID = "support@callslate.com";
+    String INFO_MAIL_PASSWORD = "Mikuya&2107";
+    List<String> DURATION_TYPE = Arrays.asList("DAY", "DAYS", "WEEK", "WEEKS", "MONTH", "MONTHS", "HOUR", "HOURS");
+    String APP_DISCONNECTED = "APP DISCONNECTED";
+    String APP_DELETED = "APP DELETED";
+}
